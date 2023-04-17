@@ -1,6 +1,8 @@
 # thigh-js
 Javascript SDK for integrating the ingredients of Shorter
 
-try it:
+Try it: <https://www.npmjs.com/package/thigh-test-js>
 
-<https://www.npmjs.com/package/thigh-test-js>
+If you wanna know anything else about `Shorter`: <https://github.com/IPILabs/shorter-v1>
+
+
