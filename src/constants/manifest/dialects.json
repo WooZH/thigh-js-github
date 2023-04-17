@@ -1,0 +1,28 @@
+{
+    "chains": {
+        "ethereum-mainnet": {
+            "name": "Ethereum",
+            "symbol": "ETH",
+            "chainId": "0x1",
+            "isSupported": true,
+            "scanURL": "https://etherscan.io/",
+            "gas": {
+                "name": "Ether",
+                "symbol": "ETH"
+            },
+            "rpcURL": "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456162"
+        },
+        "goerli": {
+            "name": "Goerli",
+            "symbol": "ETH",
+            "chainId": "0x5",
+            "isSupported": true,
+            "scanURL": "https://goerli.etherscan.io/",
+            "gas": {
+                "name": "Ether",
+                "symbol": "ETH"
+            },
+            "rpcURL": "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456162"
+        }
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>test</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <button onclick="c()">connect metamask</button>
+    <br />
+    <button onclick="deposit()">deposit</button>
+    <br />
+    <button onclick="approve()">approve</button>
+    <script type="module" src="../dist/umd/index.js"></script>
+    <script>
+      function c() {
+        console.log("connect");
+        Thigh.metamask.fetchAccount().then((res) => {
+          console.log("connected", res);
+        });
+      }
+
+      function disconnect() {}
+      // const params = {
+      //   thigh_account: "0xEA82594EB8328aA829327edb61f1c98e4ad5507D",
+      //   thigh_chainId: "0x04",
+      //   thigh_name: "Infura",
+      //   thigh_rpc:
+      //     "https://rinkeby.infura.io/v3/171804856af343c29413c25bef295230",
+      // };
+      // Thigh.config.init(params);
+      // Thigh.getContractAddress("tradingHub");
+      // Thigh.pool.getPools(null, 1).then((res) => {
+      //   const ids = res;
+      //   const test_id = res[0][0];
+      //   console.log("ids", ids, test_id);
+
+      //   Thigh.pool.getPoolInfo(test_id).then((res) => {
+      //     console.log("res", res);
+      //   });
+      // });
+      function deposit() {
+        Thigh.module.pool.deposit(
+          "0x4055De449707f0Bb7f19E7890612B557f26f1cD4",
+          "0x03328b944c4000"
+        );
+      }
+      function approve() {
+        Thigh.module.pool.approve("0x4055De449707f0Bb7f19E7890612B557f26f1cD4");
+      }
+    </script>
+  </body>
+</html>
